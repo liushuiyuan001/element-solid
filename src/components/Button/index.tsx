@@ -2,12 +2,13 @@ import type { Component, JSXElement } from 'solid-js';
 import classNames from 'classnames';
 import './index.less'
 
-type ButtonProps = {
-  type?: string;
+export type ButtonProps = {
+  type?: "default" | "primary" | "dashed" | "link" | "text";
   disabled?: boolean;
   children?: JSXElement;
 }
-const Button: Component = ({ type = 'default', disabled, children }: ButtonProps) => {
+
+const Button: Component<ButtonProps> = ({ type = 'default', disabled, children }) => {
   const classes = classNames(
     'sl-btn',
     `sl-btn-${type}`,

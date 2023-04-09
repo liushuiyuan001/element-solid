@@ -22,7 +22,14 @@
     background-color: #ffffff;
     border-color: #d9d9d9;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
-
+    &:not(:disabled):hover,&:not(:disabled):focus {
+      color: #4096ff;
+      border-color: #4096ff;
+    }
+    &:not(:disabled):active {
+      color: #0958d9;
+      border-color: #0958d9;
+    }
     &:disabled {
       background-color: cyan;
     }

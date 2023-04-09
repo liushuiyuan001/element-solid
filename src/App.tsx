@@ -7,7 +7,7 @@ import styles from './App.module.css';
 const App: Component = () => {
   return (
     <div class={styles.App}>
-      <Button>123</Button>
+      <Button type='default'>123</Button>
     </div>
   );
 };

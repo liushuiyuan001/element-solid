@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "paths": {
+      "SlDesign": ["./src/component/index.ts"]
+    },
     "strict": true,
     "target": "ESNext",
     "module": "ESNext",
