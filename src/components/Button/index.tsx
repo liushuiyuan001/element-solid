@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import './index.less'
 
 export type ButtonProps = {
-  type?: "default" | "primary" | "dashed" | "link" | "text";
+  type?: "default" | "primary" | "dashed" | "text" | "link";
   disabled?: boolean;
   children?: JSXElement;
 }
@@ -15,7 +15,7 @@ const Button: Component<ButtonProps> = ({ type = 'default', disabled, children }
   )
   return (
     <button disabled={disabled} class={classes}>
-      {children}
+      {children || `${type} Button` }
     </button>
   )
 }
