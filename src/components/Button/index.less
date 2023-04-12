@@ -24,7 +24,7 @@
     background-color: #ffffff;
     border-color: #d9d9d9;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
-    &:not(:disabled):hover,&:not(:disabled):focus {
+    &:not(:disabled):hover {
       color: #4096ff;
       border-color: #4096ff;
     }
@@ -38,6 +38,23 @@
       color: rgba(0,0,0,.25);
       background-color: rgba(0,0,0,.04);
       box-shadow: none;
+    }
+    &.sl-btn-danger {
+      color: #ff4d4f;
+      border-color: #ff4d4f;
+      &:not(:disabled):active {
+        color: #d9363e;
+        border-color: #d9363e;
+      }
+      &:not(:disabled):hover{
+        color: #ff7875;
+        border-color: #ffa39e;
+      }
+      &:not(:disabled):focus-visible{
+        outline: 4px solid #91caff;
+        outline-offset: 1px;
+        transition: outline-offset 0s,outline 0s;
+      }
     }
   }
   &.sl-btn-primary {
@@ -59,6 +76,16 @@
       color: rgba(0,0,0,.25);
       background-color: rgba(0,0,0,.04);
       box-shadow: none;
+    }
+    &.sl-btn-danger {
+      background-color: #ff4d4f;
+      box-shadow: 0 2px 0 rgba(255,38,5,.06);
+      &:not(:disabled):active {
+        background-color: #d9363e;
+      }
+      &:not(:disabled):hover,&:not(:disabled):focus{
+        background-color: #ff7875;
+      }
     }
   }
   &.sl-btn-dashed {
@@ -86,6 +113,18 @@
       background-color: rgba(0,0,0,.04);
       box-shadow: none;
     }
+    &.sl-btn-danger {
+      color: #ff4d4f;
+      border-color: #ff4d4f;
+      &:not(:disabled):active {
+        color: #d9363e;
+        border-color: #d9363e;
+      }
+      &:not(:disabled):hover,&:not(:disabled):focus{
+        color: #ff7875;
+        border-color: #ffa39e;
+      }
+    }
   }
   &.sl-btn-text {
     &:not(:disabled):active,&:not(:disabled):hover {
@@ -101,6 +140,17 @@
       cursor: not-allowed;
       color: rgba(0,0,0,.25);
     }
+    &.sl-btn-danger {
+      color: #ff4d4f;
+      &:not(:disabled):active {
+        color: #ff7875;
+        background-color: #fff2f0;
+      }
+      &:not(:disabled):hover,&:not(:disabled):focus{
+        color: #ff7875;
+        background-color: #fff2f0;
+      }
+    }
   }
   &.sl-btn-link {
     color: #1677ff;
@@ -115,6 +165,15 @@
     &:disabled {
       cursor: not-allowed;
       color: rgba(0,0,0,.25);
+    }
+    &.sl-btn-danger {
+      color: #ff4d4f;
+      &:not(:disabled):active {
+        color: #d9363e;
+      }
+      &:not(:disabled):hover,&:not(:disabled):focus{
+        color: #ff7875;
+      }
     }
   }
 }
